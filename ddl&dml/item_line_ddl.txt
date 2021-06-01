@@ -1,0 +1,4 @@
+create table item_line (
+	item_line_id INT PRIMARY KEY,
+	quantity_instock INT NOT NULL
+);

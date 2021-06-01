@@ -1,0 +1,28 @@
+CREATE TABLE Customers (
+	customer_id int NOT NULL,
+	customer_name char(50) NOT NULL,
+	customer_dob date NOT NULL,
+	customer_email varchar NOT NULL,
+	PRIMARY KEY(customer_id)
+);
+
+CREATE TABLE Classes (
+    class_id int NOT NULL,
+	FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
+	class_name varchar NOT NULL,
+	class_description varchar,
+	class_type varchar NOT NULL,
+	class_time datetime NOT NULL,
+	class_location varchar NOT NULL
+	PRIMARY KEY(class_id)
+);
+CREATE TABLE Memberships (
+	membership_id int NOT NULL,
+	FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
+	membership_name varchar NOT NULL,
+	membership_price int NOT NULL,
+	membership_startdate datetime NOT NULL,
+	membership_enddate datetime NOT NULL,
+	membership_currentstatus varchar NOT NULL
+);
+	

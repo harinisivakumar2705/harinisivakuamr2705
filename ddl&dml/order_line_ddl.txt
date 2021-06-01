@@ -1,0 +1,4 @@
+create table order_line (
+	ol_id INT PRIMARY KEY,
+	o_date DATE NOT NULL
+);

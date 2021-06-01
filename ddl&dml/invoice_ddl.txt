@@ -1,0 +1,4 @@
+create table invoice (
+	inv_id INT PRIMARY KEY,
+	invoice_submitted DATE NOT NULL
+);

@@ -1,0 +1,13 @@
+create table employee (
+	emp_id INT PRIMARY KEY,
+	emp_fname VARCHAR(25) NOT NULL,
+	emp_lname VARCHAR(25) NOT NULL,
+	emp_address VARCHAR(50), NOT NULL,
+	emp_city VARCHAR(20), NOT NULL,
+	emp_st_date DATETIME, NOT NULL,
+	emp_end_date DATETIME);
+	
+	
+	
+	
+	

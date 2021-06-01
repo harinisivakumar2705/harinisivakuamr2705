@@ -1,0 +1,6 @@
+create table items (
+	items_id INT PRIMARY KEY,
+	item_name VARCHAR(50) NOT NULL,
+	item_quantity INT NOT NULL,
+	unit_price VARCHAR(50) NOT NULL
+);

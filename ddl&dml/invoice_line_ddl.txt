@@ -1,0 +1,4 @@
+create table invoice_line (
+	inv_line_id INT PRIMARY KEY,
+	inv_date DATE NOT NULL
+);

@@ -1,0 +1,6 @@
+create table orders (
+	o_id INT PRIMARY KEY,
+	o_name VARCHAR(50) NOT NULL,
+	o_quantity INT NOT NULL,
+	o_total INT NOT NULL
+);
